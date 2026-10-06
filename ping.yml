@@ -1,0 +1,8 @@
+---
+- name: Probar conectividad con servera
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Enviar ping
+      ansible.builtin.ping:
